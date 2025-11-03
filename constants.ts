@@ -2,11 +2,10 @@ import type { NewsArticle, CaseStudy } from './types';
 import { NewsType } from './types';
 
 export const navLinks = [
+  { name: '企業情報', href: '#about' },
   { name: 'サービス', href: '#services' },
-  { name: '施工事例', href: '#/cases' },
-  { name: '会社概要', href: '#about' },
-  { name: 'アクセス', href: '#access' },
-  { name: 'ブログ', href: '#/news?type=blog' },
+  { name: 'ニュース', href: '#/news' },
+  { name: '問い合わせ', href: '#entry' },
 ];
 
 export const newsData: NewsArticle[] = [

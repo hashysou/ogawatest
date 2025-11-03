@@ -87,7 +87,7 @@ const NewsSection: React.FC = () => {
     return (
         <section className="py-16 lg:py-24 bg-gray-50">
             <div className="container mx-auto">
-                <SectionTitle title="お知らせ・イベント・ブログ" subtitle="NEWS & TOPICS" />
+                <SectionTitle title="ニュース" subtitle="NEWS & TOPICS" />
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {latestNews.map((item, index) => (
                         <NewsCard key={index} article={item} />
