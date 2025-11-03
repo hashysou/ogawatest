@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>株式会社おがわ ワイヤーフレーム</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#336699',
+              secondary: '#F2A900',
+              accent: '#E5E5E5',
+              'base-text': '#333333',
+            },
+            spacing: {
+              '8': '2rem',
+              '12': '3rem',
+              '16': '4rem',
+              '24': '6rem',
+              '32': '8rem',
+              '48': '12rem',
+              '72': '18rem',
+            },
+            container: {
+                center: true,
+                padding: {
+                    DEFAULT: '1rem', // SP 16px
+                    lg: '1.5rem', // PC 24px
+                },
+                screens: {
+                    lg: '1168px', // 1120px + 24px*2
+                }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.5"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
